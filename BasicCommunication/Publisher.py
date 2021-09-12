@@ -11,7 +11,7 @@ channel = connection.channel()
 channel.queue_declare(queue='test')
 
 # publish the message
-channel.basic_publish(exchange='', routing_key='test', body='hello world #2')
+channel.basic_publish(exchange='', routing_key='test', body='hello world #3')
 print('[x] Sent hello world')
 
 # close the connection
